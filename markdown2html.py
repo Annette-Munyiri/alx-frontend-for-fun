@@ -1,13 +1,19 @@
 #!/usr/bin/python3
 
 """
-Script converts markdown to HTML.
+Converting Markdown script using python.
 """
-
-from html_builder import HTML
+import sys
+import os.path
+import re
+import hashlib
 
 if __name__ == '__main__':
+    if len(sys.argv) < 3:
+        print('Usage: ./markdown2html.py README.md README.html',
+                file=sys.stderr)
+        exit(1)
 
-    html = HTML()
-    html.process().build().substitute().write()
-    exit(0)
+    if not os.path.isfile(sys.argv[1]):
+        print('Missing {}'.format(sys.argv[1]), file=sys.stderr)
+        exit(1)
