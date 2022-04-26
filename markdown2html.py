@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-Converts Markdown to HTML.
+Script converts markdown to HTML.
 """
 
 from html_builder import HTML
