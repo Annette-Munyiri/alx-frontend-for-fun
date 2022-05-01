@@ -571,8 +571,8 @@ ul.row {
 }
 
 .post img {
-    width: 100%;
-    height: auto;
+    width: 100% !important;
+    height: auto !important;
 }
 
 .post-content p:first-child {
@@ -581,9 +581,9 @@ ul.row {
 
 .post-content .img-caption {
     margin: 1rem 0;
-    padding: 0 0.5rem;
+    padding: 0 .5rem;
     font-size: var(--font-size-small);
-    color: var(--color-grey);
+    color: #a0a0a0;
     text-align: center;
 }
 
