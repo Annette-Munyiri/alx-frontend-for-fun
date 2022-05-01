@@ -571,8 +571,8 @@ ul.row {
 }
 
 .post img {
-    width: 100% !important;
-    height: auto !important;
+    width: 100%;
+    height: auto;
 }
 
 .post-content p:first-child {
@@ -583,7 +583,7 @@ ul.row {
     margin: 1rem 0;
     padding: 0 .5rem;
     font-size: var(--font-size-small);
-    color: #a0a0a0;
+    color: var(--color-grey);
     text-align: center;
 }
 
@@ -602,7 +602,7 @@ ul.row {
 .post-meta-list [class*='post-meta-'] {
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    border-bottom: 0.2rem solid var(--color-light-grey);
+    border-bottom: 0.2rem solid var(--color-grey);
 }
 
 .post-meta-list [class*='post-meta']:last-child {
